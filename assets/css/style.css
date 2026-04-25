@@ -445,7 +445,7 @@ img {
 /*insta*/
 .insta{
     justify-content: center;
-    flex: content;
+    display: flex;
 }
 .instagram_item {
     height: 320px;
