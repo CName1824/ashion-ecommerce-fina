@@ -310,20 +310,9 @@ img {
 }
 
 /*Discount*/
-.Discount {
-    width: ;
-}
 
 .mb-6 {
     margin-bottom: 60px !important;
-}
-
-.summer_2019 {
-    margin-bottom: 10px;
-}
-
-.container {
-    width: 100%;
 }
 
 .discount-summer {
@@ -333,35 +322,30 @@ img {
     max-width: 585px;
     height: 390px;
     position: relative;
-    overflow: hidden;
     z-index: 1;
 }
 
-.discount-summer::before {
+.sale ::before {
     content: "";
     position: absolute;
     width: 183px;
     height: 183px;
     background: #ffffff;
     border-radius: 50%;
-    top: 40%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
 }
 
-.discount-summer .discount_text,
-.discount-summer .summer_2019,
-{
-    position: relative;
-    z-index: 1;
-}
-
-.shop_now {
+.shop_now_btn {
+    display: table;
+    margin: 0 auto;
     color: #000;
-    justify-content: center;
     font-size: 14px;
     font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
 }
 
 .discount_text {
@@ -372,33 +356,41 @@ img {
     font-size: 60px;
     font-family: "Cookie", cursive;
     color: #CA1515;
+    margin-bottom: 10px;
+    line-height: 46px;
+}
+
+.countdown {
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: nowrap ;
+    justify-content: center ;
+    gap: 20px ;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
 .countdown span {
-    width: 101.25px;
-    height: 45px;
-    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    width: auto;
+    margin: 0;
 }
 
 .countdown span div {
     font-size: 30px;
     font-weight: bold;
+    color: #111111;
+    line-height: 1;
+    margin: 0;
 }
 
 .countdown span p {
     font-size: 14px;
-}
-
-.sale50 {
-    color: #CA1515;
-    font-weight: bold;
-}
-
-.sale50 span {
-    color: #111111;
-    margin-right: 4px;
-    font-weight: lighter;
-    font-size: 14px;
+    color: #666666;
+    margin: 0;
 }
 
 /*Discount end*/
