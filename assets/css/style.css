@@ -75,6 +75,10 @@ img {
     font-family: 'FontAwesome';
 }
 
+/*---------------------
+        Index begin
+-----------------------*/
+
 /* header */
 .header {
     height: 84px;
@@ -146,9 +150,6 @@ img {
     margin-bottom: 10px;
 }
 
-.container {
-    width: 100%;
-}
 
 .discount-summer {
     background-color: #f4f4f4;
@@ -439,6 +440,53 @@ img {
     margin-left: 4px;
 }
 
+
+/*---------------------
+        index end
+-----------------------*/
+
+
+
+/*---------------------
+  Product Details begin
+-----------------------*/
+
+.breadcrumb-option{
+    padding-top: 35px;
+}
+.breadcrumb a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+
+}
+.breadcrumb li i{
+    margin-right: 5px;
+}
+
+.product-detail{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.product-detail-pic{
+    display: flex;
+}
+
+.product-detail-pic .product-detail-left{
+    width: 22%;
+}
+.product-detail-pic .product-detail-left a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.product-detail-pic .product-detail-right{
+    margin-left: 20px;
+}
+
+/*---------------------
+  Product Details end
+-----------------------*/
 
 
 /* =========================================== */
