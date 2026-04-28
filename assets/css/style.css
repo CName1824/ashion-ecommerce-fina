@@ -115,8 +115,6 @@ img {
 }
 
 
-
-
 .hero-text h1 {
     font-family: "Cookie", cursive;
     color: #111111;
@@ -136,133 +134,6 @@ img {
     display: inline-block;
 }
 
-
-/*Discount*/
-.Discount {
-    width: ;
-}
-
-.mb-6 {
-    margin-bottom: 60px !important;
-}
-
-.summer_2019 {
-    margin-bottom: 10px;
-}
-
-
-.discount-summer {
-    background-color: #f4f4f4;
-    justify-content: center;
-    padding: 75px 90px 50px;
-    max-width: 585px;
-    height: 390px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.discount-summer::before {
-    content: "";
-    position: absolute;
-    width: 183px;
-    height: 183px;
-    background: #ffffff;
-    border-radius: 50%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.discount-summer .discount_text,
-.discount-summer .summer_2019,
-{
-    position: relative;
-    z-index: 1;
-}
-
-.shop_now {
-    color: #000;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.discount_text {
-    font-size: 12px;
-}
-
-.summer_2019 {
-    font-size: 60px;
-    font-family: "Cookie", cursive;
-    color: #CA1515;
-}
-
-.countdown span {
-    width: 101.25px;
-    height: 45px;
-    margin-bottom: 15px;
-}
-
-.countdown span div {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.countdown span p {
-    font-size: 14px;
-}
-
-.sale50 {
-    color: #CA1515;
-    font-weight: bold;
-}
-
-.sale50 span {
-    color: #111111;
-    margin-right: 4px;
-    font-weight: lighter;
-    font-size: 14px;
-}
-
-/*Discount end*/
-
-/*service*/
-.service{
-    padding: 80px 0px 50px;
-}
-.service_box{
-    padding: 0px 15px 15px 0px;
-}
-.service_item{
-    position: relative;
-    margin-bottom: 25px;
-}
-
-.service_item i {
-    font-family: 'FontAwesome' !important;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 40px;
-    color: #CA1515;
-    font-style: normal;
-}
-
-.service_item h6 {
-    color: #111111;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.service_item p {
-    margin: 0;
-    color: #666666;
-    font-size: 14px;
-}
-
-/*service end*/
 .hero-text a::after {
     position: absolute;
     left: 0;
@@ -274,7 +145,6 @@ img {
 }
 
 /* hero end */
-
 
 /* product */
 .list-product {
@@ -440,6 +310,196 @@ img {
     margin-left: 4px;
 }
 
+/*Discount*/
+
+.mb-6 {
+    margin-bottom: 60px !important;
+}
+
+.discount-summer {
+    background-color: #f4f4f4;
+    justify-content: center;
+    padding: 75px 90px 50px;
+    max-width: 585px;
+    height: 390px;
+    position: relative;
+    z-index: 1;
+}
+
+.sale ::before {
+    content: "";
+    position: absolute;
+    width: 183px;
+    height: 183px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.shop_now_btn {
+    display: table;
+    margin: 0 auto;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.discount_text {
+    font-size: 12px;
+}
+
+.summer_2019 {
+    font-size: 60px;
+    font-family: "Cookie", cursive;
+    color: #CA1515;
+    margin-bottom: 10px;
+    line-height: 46px;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.countdown span {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 5px;
+    width: auto;
+    margin: 0;
+}
+
+.countdown span div {
+    font-size: 30px;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1;
+    margin: 0;
+}
+
+.countdown span p {
+    font-size: 14px;
+    color: #666666;
+    margin: 0;
+}
+
+/*Discount end*/
+
+/*service*/
+.service {
+    padding: 80px 0px 50px;
+}
+
+.service_box {
+    padding: 0px 15px 15px 0px;
+}
+
+.service_item {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 65px;
+}
+
+.service_item i {
+    font-family: 'FontAwesome' !important;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 40px;
+    color: #CA1515;
+    font-style: normal;
+}
+
+.service_item h6 {
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.service_item p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    text-align: left;
+}
+
+/*service end*/
+
+/*insta begin*/
+.insta {
+    justify-content: center;
+    display: flex;
+}
+
+.instagram_item {
+    height: 320px;
+    position: relative;
+}
+
+.instagram_item img {
+    width: 100%;
+    height: 100%;
+}
+
+.instagram_item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffffE6;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.instagram_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.instagram_item:hover::after {
+    opacity: 1;
+}
+
+.instagram_item:hover .instagram_text {
+    opacity: 1;
+}
+
+.instagram_text i {
+    font-size: 30px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.instagram_text a {
+    font-size: 15px;
+    color: #111111;
+    font-weight: 500;
+}
+
+/*insta end*/
 
 /*---------------------
         index end
@@ -489,6 +549,7 @@ img {
 -----------------------*/
 
 
+
 /* =========================================== */
 @media (min-width: 1200px) {
     .container {
@@ -496,3 +557,4 @@ img {
     }
 }
 
+}
