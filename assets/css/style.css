@@ -98,6 +98,10 @@ img {
     font-family: 'FontAwesome';
 }
 
+/*---------------------
+        Index begin
+-----------------------*/
+
 /* header */
 .header {
     padding: 0 30px;
@@ -304,8 +308,6 @@ img {
 }
 
 
-
-
 .hero-text h1 {
     font-family: "Cookie", cursive;
     color: #111111;
@@ -336,7 +338,6 @@ img {
 }
 
 /* hero end */
-
 
 /* product */
 .list-product {
