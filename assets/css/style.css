@@ -494,6 +494,16 @@ img {
 }
 /*insta end*/
 
+/*shop*/
+.breadcrumb_links {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+.breadcrumb_link a{
+    font-size: 15px;
+    font-style: #11111;
+}
+/*shop end*/
 /* =========================================== */
 @media (min-width: 1200px) {
     .container {
