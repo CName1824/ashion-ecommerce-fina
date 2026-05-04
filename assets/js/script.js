@@ -1,6 +1,6 @@
 const DiscountDate = new Date("May 28, 2026 00:00:00").getTime();
 
-const x = setInterval(function() {
+const countdownday = setInterval(function() {
 
   const now = new Date().getTime();
 
@@ -17,7 +17,7 @@ const x = setInterval(function() {
   document.getElementById("secs").innerHTML = secs;
 
   if (distance < 0) {
-    clearInterval(x);
+    clearInterval(countdownday);
     document.getElementById("countdown").innerHTML = "ĐÃ ĐẾN GIỜ!";
   }
 }, 1000);
