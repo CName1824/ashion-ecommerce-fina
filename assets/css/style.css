@@ -325,6 +325,20 @@ img {
     z-index: 1;
 }
 
+.sale50{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #CA1515;
+    font-weight: bold;
+}
+
+.sale50 span{
+    font-size: 14px;
+    color: #111111;
+    margin-right: 4px;
+    font-weight: lighter;
+}
+
 .sale ::before {
     content: "";
     position: absolute;
@@ -338,7 +352,7 @@ img {
     z-index: -1;
 }
 
-.shop_now_btn {
+.shop_now {
     display: table;
     margin: 0 auto;
     color: #000;
@@ -346,10 +360,12 @@ img {
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
+    border-bottom: #CA1515;
 }
 
 .discount_text {
     font-size: 12px;
+    color: #111111;
 }
 
 .summer_2019 {
@@ -380,7 +396,7 @@ img {
 
 .countdown span div {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 600;
     color: #111111;
     line-height: 1;
     margin: 0;
@@ -388,8 +404,9 @@ img {
 
 .countdown span p {
     font-size: 14px;
-    color: #666666;
+    color: #111111;
     margin: 0;
+    font-weight: 500;
 }
 
 /*Discount end*/
@@ -455,7 +472,8 @@ img {
     height: 100%;
     background: #ffffffE6;
     opacity: 0; 
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
+
 }
 
 .instagram_text {
@@ -501,7 +519,16 @@ img {
 }
 .breadcrumb_link a{
     font-size: 15px;
-    font-style: #11111;
+    color:#111111; !important
+}
+.Categories ::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ca1515;
+    content: "";
 }
 /*shop end*/
 /* =========================================== */
