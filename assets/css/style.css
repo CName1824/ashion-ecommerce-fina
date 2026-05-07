@@ -957,6 +957,30 @@ img {
 /*insta end*/
 
 /*shop*/
+.Shop{
+    padding: 70px 0 80px;
+}
+.Categories{
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+.sidebar{
+    padding: 0rem 1.5rem;
+}
+.sidebar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.sidebar-menu a[data-bs-toggle="collapse"] i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar-menu a[aria-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
 .Categories ::after{
     position: absolute;
     left: 0;
@@ -966,6 +990,97 @@ img {
     background: #ca1515;
     content: "";
 }
+.Shopbyprice{
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+.Shopbysize{
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+.Shopbycolor{
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+.out-of-stockk{
+    background-color: #0066BD;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 0;
+}
+.pagination a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    color: #111111;
+    height: 40px;
+    width: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    
+    transition: all 0.3s ease; 
+}
+
+.pagination a:hover,
+.pagination a.active {
+    background-color: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+.product-imga{
+    padding: 0 1.5rem;
+    margin: 0;
+}
+.checkbox-list .form-check {
+    margin-bottom: 0.8rem; 
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-list .form-check-label {
+    font-size: 1.4rem;
+    color: #444444; 
+    cursor: pointer; 
+    margin-left: 1rem;
+}
+
+.checkbox-list .form-check-input {
+    cursor: pointer;
+    border-radius: 0;
+    margin-top: 0; 
+    height: 1rem;
+    width: 1rem;
+    border: 0.1rem  #111111 solid;
+}
+.text-menu-sidebar{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.text-sidebar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.inside-text-sidebar{
+    display: block;
+    color: #666666;
+    font-size: 1.4rem;
+}
+.text-inside{
+    padding: 0.6rem 2rem 0rem 0rem;
+}
+
 /*shop end*/
 /* =========================================== */
 @media (min-width: 1200px) {
