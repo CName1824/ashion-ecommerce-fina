@@ -965,7 +965,132 @@ img {
 }
 
 /*insta end*/
+/* footer */
+.footer {
+    background: #f7f7f7;
+    padding: 60px 0 20px;
+    font-family: Arial, sans-serif;
+}
 
+
+.footer-col {
+    width: 23%;
+}
+
+.logo {
+    font-family: 'Cookie', cursive;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-col h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+    color: #000;
+}
+
+/* payment */
+.payment a {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+
+}
+.payment img {
+    width: 40px;
+    
+}
+
+/* newsletter */
+.newsletter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background: red;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+/* social */
+.social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #ddd;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+.social a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* bottom */
+hr {
+    margin: 40px 0 20px;
+    border: 0.5px solid #ddd;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+/* footer end */
 /*shop*/
 .Shop{
     padding: 7rem 0rem 8rem;
