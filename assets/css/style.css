@@ -1330,6 +1330,24 @@ hr {
     border: 1px solid #444444;
     border-radius: 2px;
 }
+.stock-checkbox .checkmark::after{
+    content: "\f00c";
+    font-family: FontAwesome;;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    display: none;
+    color: #ca1515;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.stock-checkbox input:checked~ .checkmark{
+    border-color: #ca1515;
+}
+.stock-checkbox input:checked~ .checkmark::after {
+    display: block;
+}
 
 .product-detail-widget .color-checkbox label{
     display: inline-block;
@@ -1344,7 +1362,7 @@ hr {
 .product-detail-widget .color-checkbox .checkmark{
     position: absolute;
     left: 0;
-    top: -10px;
+    top: -17px;
     height: 20px;
     width: 20px;
     background: #e31e2f;
@@ -1356,6 +1374,21 @@ hr {
 }
 .product-detail-widget .color-checkbox .checkmark.grey-bg {
     background: #e4aa8b;
+}
+.product-detail-widget .color-checkbox .checkmark::after{
+    content: "\f00c";
+    font-family: FontAwesome;;
+    font-weight: 400;
+    position: absolute;
+    display: none;
+    color: white;
+    font-size: 12px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.color-checkbox input:checked~.checkmark:after {
+    display: block;
 }
 
 .product-detail-widget .size-btn label{
