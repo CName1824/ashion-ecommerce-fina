@@ -10,6 +10,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/elegant-icons.css">
 
@@ -128,24 +129,26 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="product-detail-pic">
-                        <div class="product-detail-left">
-                            <a href="">
-                                <img src="./assets/img/product/details/thumb-1.jpg" alt="">
+                        <div class="product-detail-pic-left product-thumb">
+                            <a class="pt active" href="#product-1">
+                                <img src="assets/img/product/details/thumb-1.jpg" alt="">
                             </a>
-                            <a href="">
-                                <img src="./assets/img/product/details/thumb-2.jpg" alt="">
+                            <a class="pt" href="#product-2">
+                                <img src="assets/img/product/details/thumb-2.jpg" alt="">
                             </a>
-                            <a href="">
-                                <img src="./assets/img/product/details/thumb-3.jpg" alt="">
+                            <a class="pt" href="#product-3">
+                                <img src="assets/img/product/details/thumb-3.jpg" alt="">
                             </a>
-                            <a href="">
-                                <img src="./assets/img/product/details/thumb-4.jpg" alt="">
+                            <a class="pt" href="#product-4">
+                                <img src="assets/img/product/details/thumb-4.jpg" alt="">
                             </a>
                         </div>
-
-                        <div class="product-detail-right">
-                            <div class="product-detail-pic-large">
-                                <img src="./assets/img/product/details/product-1.jpg" alt="">
+                        <div class="product-details-slider-content">
+                            <div class="product-detail-pic-slider owl-carousel">
+                                <img data-hash="product-1" class="product__big__img" src="assets/img/product/details/product-1.jpg" alt="">
+                                <img data-hash="product-2" class="product__big__img" src="assets/img/product/details/product-2.jpg" alt="">
+                                <img data-hash="product-3" class="product__big__img" src="assets/img/product/details/product-3.jpg" alt="">
+                                <img data-hash="product-4" class="product__big__img" src="assets/img/product/details/product-4.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -468,10 +471,93 @@
     <!-- ===========Instagram end============ -->
 
     <!-- ===========Footer============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+    
+                <!-- Logo -->
+                <div class="footer-col">
+                    <h2 class="logo">Ashion</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt cilisis.
+                    </p>
+    
+                    <div class="payment">
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/ashion/img/payment/payment-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/ashion/img/payment/payment-2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/ashion/img/payment/payment-3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/ashion/img/payment/payment-4.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="https://preview.colorlib.com/theme/ashion/img/payment/payment-5.png" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Quick links -->
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Account -->
+                <div class="footer-col">
+                    <h4>ACCOUNT</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Orders Tracking</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h4>NEWSLETTER</h4>
+    
+                    <div class="newsletter">
+                        <input type="email" placeholder="Email">
+                        <button>SUBSCRIBE</button>
+                    </div>
+    
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="footer-bottom">
+                <p>
+                    Copyright © 2026 All rights reserved |
+                    This template is made with <i class="fa fa-heart"></i> by Colorlib
+                </p>
+            </div>
+        </div>
+    </footer>
     <!-- ===========Footer end============ -->
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    
 
     <script src="./assets/js/main.js"></script>
 </body>

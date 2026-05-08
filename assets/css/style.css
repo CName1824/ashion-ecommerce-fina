@@ -68,7 +68,6 @@ a {
 img {
     max-width: 100%;
     height: auto;
-    display: flex;
 }
 /* button */
 .primary-btn {
@@ -295,6 +294,16 @@ img {
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 
@@ -1092,21 +1101,73 @@ hr {
     padding-top: 70px;
     padding-bottom: 50px;
 }
-.product-detail-pic{
+
+.product-detail-pic {
     display: flex;
+    margin-bottom: 30px;
 }
 
-.product-detail-pic .product-detail-left{
+
+.product-detail-pic-left {
     width: 22%;
-}
-.product-detail-pic .product-detail-left a {
-    display: block;
-    margin-bottom: 20px;
+    max-height: 574px;
+    float: left;
 }
 
-.product-detail-pic .product-detail-right{
+.product-thumb .pt {
+    display: block;
+    line-height: 0;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.product-thumb .pt img {
+    width: 100%;
+}
+.product-thumb .pt::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.product-thumb .pt.active::after {
+    opacity: 0.3;
+}
+
+.product-details-slider-content {
+    flex: 1;
+    overflow: hidden;
     margin-left: 20px;
 }
+.product-detail-pic-slider .owl-nav button.owl-prev,
+.product-detail-pic-slider .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    font-size: 2.2rem;
+    color: #111111;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.product-detail-pic-slider .owl-nav button.owl-prev {
+    left: 10px;
+}
+
+.product-detail-pic-slider .owl-nav button.owl-next {
+    right: 10px;
+}
+
 
 
 .product-detail-text h3{
