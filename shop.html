@@ -39,7 +39,7 @@
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active">
+                            <li>
                                 <a href="./index.html">Home</a>
                             </li>
                             <li>
@@ -48,8 +48,8 @@
                             <li>
                                 <a href="#">Men’s</a>
                             </li>
-                            <li>
-                                <a href="#">Shop</a>
+                            <li class="active">
+                                <a href="./shop.html">Shop</a>
                             </li>
                             <li>
                                 <a href="#">Pages</a>
@@ -213,12 +213,21 @@
                         <div class="section-title">
                             <h4 class="Shopbyprice">SHOP BY PRICE</h4>
                         </div>
-                        <div class="filter-price">
-                            <div class="price-input">
-                                <p>Price</p>
-                                <input id="min" value="$33">
-                                <input id="max" value="$99">
-                                <a>Filter</a>
+                       <div class="price-filter-container">
+                            <div class="slider-wrapper">
+                                <div class="slider-track"></div>
+                                <div class="slider-progress" id="progress"></div> 
+                                <input type="range" id="range-min" min="33" max="99" value="33">
+                                <input type="range" id="range-max" min="33" max="99" value="99">
+                            </div>
+                            <div class="filter-controls">
+                                <div class="price-display">
+                                    Price:
+                                    <input type="text" id="input-min" value="$33">
+                                    <span>-</span>
+                                    <input type="text" id="input-max" value="$99">
+                                </div>
+                                <button class="btn-filter">FILTER</button>
                             </div>
                         </div>
                     </div>

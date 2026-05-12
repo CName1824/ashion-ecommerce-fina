@@ -21,3 +21,37 @@ const countdownday = setInterval(function() {
     document.getElementById("countdown").innerHTML = "ĐÃ ĐẾN GIỜ!";
   }
 }, 1000);
+
+//#shop
+let rangeMin = document.getElementById("range-min");
+let rangeMax = document.getElementById("range-max");
+let inputMin = document.getElementById("input-min");
+let inputMax = document.getElementById("input-max");
+let progress = document.getElementById("progress");
+
+const MIN_LIMIT = 33;
+const MAX_LIMIT = 99;
+
+function updateSlider() {
+  if (parseInt(rangeMin.value) > parseInt(rangeMax.value)) {
+    rangeMin.value = rangeMax.value;
+  }
+  if (parseInt(rangeMax.value) < parseInt(rangeMin.value)) {
+    rangeMax.value = rangeMin.value;
+  }
+
+  inputMin.value = "$" + rangeMin.value;
+  inputMax.value = "$" + rangeMax.value;
+
+  let percentMin = ((rangeMin.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
+  let percentMax = ((rangeMax.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
+
+  progress.style.left = percentMin + "%";
+  progress.style.right = (100 - percentMax) + "%";
+}
+
+rangeMin.addEventListener("input", updateSlider);
+rangeMax.addEventListener("input", updateSlider);
+
+updateSlider();
+//#shopend
