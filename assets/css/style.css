@@ -6,7 +6,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -80,6 +79,8 @@ img {
     background: #ca1515;
 }
 
+
+
 .site-btn {
     font-size: 14px;
     color: #ffffff;
@@ -92,10 +93,6 @@ img {
     border-radius: 50px;
 }
 /* buttun end */
-
-.fa {
-    font-family: 'FontAwesome';
-}
 
 /*---------------------
         Index begin
@@ -223,16 +220,15 @@ img {
     color: #666;
     margin-right: 8px;
     text-decoration: none;
-}
-.header__right__auth a:first-child{
     position: relative;
 }
-.header__right__auth a::after{
+
+.header__right__auth a:first-child::after{
     position: absolute;
-    right: -8px;
-    top: -2px;
+    right: -12px;
+    top: 0;
     content: "/";
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 .header__right__auth a:last-child {
     margin-right: 0;
@@ -291,8 +287,6 @@ img {
     display: flex;
     align-items: center;
     padding-left: 30px;
-    background-size: cover;
-    background-position: center;
     margin-bottom: 10px;
     position: relative;
 }
@@ -433,6 +427,10 @@ img {
     overflow: hidden;
     position: relative;
 }
+.product-item-pic img{
+    height: 100%;
+    object-fit: cover;
+}
 
 .product-item-pic .product-hover {
     position: absolute;
@@ -514,7 +512,7 @@ img {
 .banner {
     height: 500px;
     /* Gán cố định hình nền cho vỏ bọc ngoài cùng */
-    background-image: url('../img/banner/banner-1.jpg');
+    background-image: url('/uploads/banner/banner-1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -535,20 +533,6 @@ img {
     background: transparent !important;
 }
 
-/* .container {
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-} */
 
 .banner_item {
     position: relative;
@@ -1109,7 +1093,6 @@ hr {
 .product-detail-pic-left {
     width: 22%;
     max-height: 574px;
-    float: left;
 }
 
 .product-thumb .pt {
@@ -1224,7 +1207,7 @@ hr {
 }
 
 .quantity>span {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #111111;
     font-weight: 600;
     float: left;
@@ -1237,28 +1220,27 @@ hr {
     height: 50px;
     width: 150px;
     display: flex;
-    padding: 0 20px;
+    justify-content: center;
     overflow: hidden;
 }
 .pro-qty .qtybtn{
     font-size: 1.4rem;
     color: #666666;
     cursor: pointer;
-    width: 12px;
-    line-height: 3.28;
+    width: 35px;
+    line-height: 3.457;
+    text-align: center;
 }
 .pro-qty input{
     font-size: 1.4rem;
     color: #666666;
     font-weight: 500;
     border: none;
-    width: 84px;
+    width: 80px;
     text-align: center;
-    height: 48px;
 }
 
 .product-detail-button .cart-btn{
-    display: inline-block;
     font-size: 1.4rem;
     color: #ffffff;
     background: #ca1515;
@@ -1273,11 +1255,13 @@ hr {
     display: flex;
 }
 .product-detail-button ul li a{
-    display: inline-block;
     border: 1px solid #ebebeb;
     border-radius: 50%;
-    padding: 14.6px 15.2px;
-    line-height: 1;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     margin-right: 10px;
 }
 
@@ -1293,6 +1277,7 @@ hr {
 
 .product-detail-widget ul li{
     margin-bottom: 10px;
+    display: flex;
 }
 
 .product-detail-widget ul li span{
@@ -1300,7 +1285,6 @@ hr {
     font-weight: 600;
     color: #111111;
     width: 150px;
-    float: left;
 }
 
 .product-detail-widget .stock-checkbox{
@@ -1347,8 +1331,14 @@ hr {
     display: block;
 }
 
+.product-detail-widget .color-checkbox{
+    display:flex;
+    align-items: center;
+}
 .product-detail-widget .color-checkbox label{
-    display: inline-block;
+    display: block;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     position: relative;
     margin-right: 20px;
@@ -1360,12 +1350,12 @@ hr {
 .product-detail-widget .color-checkbox .checkmark{
     position: absolute;
     left: 0;
-    top: -17px;
+    top:50%;
+    transform: translateY(-50%);
     height: 20px;
     width: 20px;
     background: #e31e2f;
     border-radius: 50%;
-    content: "";
 }
 .product-detail-widget .color-checkbox .checkmark.black-bg {
     background: #111111;
@@ -1395,7 +1385,6 @@ hr {
     text-transform: uppercase;
     cursor: pointer;
     margin-right: 10px;
-    
 }
 .product-detail-widget .size-btn label.active{
     color: #ca1515;
@@ -1516,7 +1505,6 @@ hr {
 
 .shop-cart-table tbody tr .cart-product-item .cart-product-title {
     overflow: hidden;
-    padding-top: 23px;
 }
 .shop-cart-table tbody tr .cart-product-item h6 {
     font-weight: 600;
@@ -1561,7 +1549,7 @@ hr {
     border-radius: 50%;
     font-size: 1.8rem;
     color: #111111;
-    line-height: 2.44;
+    line-height: 2.5;
     text-align: center;
     display: inline-block;
     font-weight: 600;
@@ -1591,19 +1579,19 @@ hr {
     text-align: right;
 }
 
-
+.shop-cart .discount-content{
+    display: flex;
+    flex-direction: column;
+}
 .shop-cart .discount-content h6{
     color: #111111;
     font-weight: 600;
     text-transform: uppercase;
-    display: inline-block;
-    margin-right: 45px;
 }
 
 .shop-cart .discount-content form{
     position: relative;
     width: 370px;
-    display: inline-block;
 }
 .shop-cart .discount-content form input{
     width: 100%;
@@ -1613,7 +1601,6 @@ hr {
     font-size: 1.4rem;
     color: #444444;
     padding-left: 30px;
-    padding-right: 115px;
 }
 .shop-cart .discount-content form button{
     position: absolute;
@@ -1675,9 +1662,6 @@ hr {
     padding-top: 35px;
 }
 
-.col-lg-4.col-md-4.col-sm-6 {
-    padding: 0 15px;
-}
 
 .blog {
     padding-top: 70px;
