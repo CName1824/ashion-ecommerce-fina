@@ -1923,3 +1923,84 @@ h4 {
     display: inline-block;
     bottom: -2px;
 }
+
+.blog_details_pic {
+    float: left;
+    margin-right: 25px;
+}
+
+.blog_details_pic img {
+    border-radius: 50%;
+}
+
+.blog_details_coment-desc-text {
+    overflow: hidden;
+}
+
+.blog_details_coment-desc-text h6 {
+    color: #111111;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.blog_details_coment-desc-text p {
+    color: #444444;
+    line-height: 26px;
+    font-size: 1.6rem;
+}
+
+.blog_details_coment-desc-text ul li {
+    list-style: none;
+    font-size: 12px;
+    color: #888888;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.blog_details_coment-desc-text ul li i {
+    font-size: 14px;
+    color: #ca1515;
+    margin-right: 5px;
+}
+
+.blog_details_comment-desc.blog_details_comment-desc--reply {
+    padding-left: 115px;
+}
+
+.blog_details_sidebar {
+    padding-left: 40px;
+}
+
+.title h4 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.title h4 {
+    border-bottom: 3px solid #ca1515;
+    display: inline-block;
+    width: 70px;
+}
+
+.blog_details_sidebar_item {
+    margin-bottom: 50px;
+}
+
+.blog_details_sidebar_item ul li {
+    list-style: none;
+    line-height: 30px;
+}
+
+.blog_details_sidebar_item ul li a {
+    color: #111111;
+}
+
+.blog_details_sidebar_item ul li a span {
+    float: right;
+    color: #888888;
+}
