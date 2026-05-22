@@ -1825,7 +1825,7 @@ h4 {
 }
 
 .blog_details_info p {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #444444;
     line-height: 27px;
 }
@@ -1919,7 +1919,7 @@ h4 {
 }
 
 .leave-btn {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #ca1515;
     display: inline-block;
     bottom: -2px;
 }
@@ -1977,18 +1977,18 @@ h4 {
     text-transform: uppercase;
     position: relative;
     display: inline-block;
-}
-
-
-
-.title h4 {
+    font-size: 1.6rem;
     border-bottom: 3px solid #ca1515;
-    display: inline-block;
+    white-space: nowrap;
     width: 70px;
 }
 
 .blog_details_sidebar_item {
     margin-bottom: 50px;
+}
+
+.blog_details_sidebar_item .title {
+    margin-bottom: 40px;
 }
 
 .blog_details_sidebar_item ul li {
@@ -1998,9 +1998,49 @@ h4 {
 
 .blog_details_sidebar_item ul li a {
     color: #111111;
+    font-size: 1.4rem;
 }
 
 .blog_details_sidebar_item ul li a span {
     float: right;
     color: #888888;
+}
+
+.blog_feature_item {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.blog_feature_item_pic {
+    flex-shrink: 0;
+    margin-right: 25px;
+    width: 110px;
+    height: 73px;
+    overflow: hidden;
+}
+
+.blog_feature_item_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog_feature_item_text {
+    overflow: hidden;
+}
+
+.blog_feature_item_text h6 {
+    color: #111111;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 21px;
+}
+
+
+.blog_feature_item_text span {
+    color: #888888;
+    font-size: 1.2rem;
+    display: block;
+
 }
