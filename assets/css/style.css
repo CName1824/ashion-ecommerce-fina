@@ -1793,9 +1793,6 @@ hr {
     margin-bottom: 5px;
 }
 
-h4 {
-    font-size: 24px;
-}
 
 .blog_details_item_title ul li {
     font-size: 12px;
@@ -1972,7 +1969,7 @@ h4 {
     padding-left: 40px;
 }
 
-.title h4 {
+.blog_details_sidebar_item .title h4 {
     color: #111111;
     font-weight: 600;
     text-transform: uppercase;
@@ -1982,7 +1979,7 @@ h4 {
 
 
 
-.title h4 {
+.blog_details_sidebar_item .title h4 {
     border-bottom: 3px solid #ca1515;
     display: inline-block;
     width: 70px;
