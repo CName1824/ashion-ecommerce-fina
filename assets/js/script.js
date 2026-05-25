@@ -1,5 +1,5 @@
 //#countdown
-const DiscountDate = new Date("May 28, 2026 00:00:00").getTime();
+const DiscountDate = new Date("Jun 28, 2026 00:00:00").getTime();
 
 const countdownday = setInterval(function() {
 

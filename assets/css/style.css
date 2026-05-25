@@ -827,10 +827,11 @@ img {
 .countdown {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap !important;
     justify-content: center;
     gap: 20px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 25px; 
 }
 
 .countdown span {
@@ -870,7 +871,7 @@ img {
 
 .service_item {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding-left: 65px;
 }
 
@@ -914,6 +915,7 @@ img {
 .instagram_item img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .instagram_item::after {
@@ -1086,7 +1088,7 @@ hr {
         margin-bottom: 30px;
     }
 
-    .row {
+    .footer .row {
         flex-direction: column;
     }
 }
@@ -1232,6 +1234,14 @@ input[type="range"]::-moz-range-thumb {
     align-items: center;
 }
 
+@media (max-width: 991.98px) {
+    .filter-controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+}
+
 .price-display {
     font-weight: 500;
     display: flex;
@@ -1305,6 +1315,7 @@ input[type="range"]::-moz-range-thumb {
 .product-imga{
     padding: 0 1.5rem;
     margin: 0;
+    object-fit: cover;
 }
 .out-of-stockk{
     background-color: #0066BD;
@@ -1348,6 +1359,20 @@ input[type="range"]::-moz-range-thumb {
         max-width: 1170px;
     }
 }
+/* =====================responsive shop and insta ===================== */
+@media (max-width: 575.98px) {
+    .discount-summer {
+        padding: 7.5rem 4rem 5rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .discount-summer{
+        padding: 7.5rem 4rem 5rem;
+    }
+}
+
+
+/* =====================responsive shop and insta end ===================== */
 
 /*dai-blog*/
 
@@ -1452,3 +1477,5 @@ input[type="range"]::-moz-range-thumb {
 .blog_item_text ul li:last-child::after {
     display: none;
 }
+
+
