@@ -92,7 +92,7 @@ $(document).ready(function () {
     }
 
     function loadProducts() {
-        fetch("http://localhost:3000/products")
+        fetch("https://6a154d6c91ff9a63de07def2.mockapi.io/products")
             .then(response => response.json())
             .then(products => {
                 allProducts = products; // Cất dữ liệu vào kho tạm
@@ -175,7 +175,7 @@ $(document).ready(function () {
     });
 
     function loadCategories() {
-        fetch("http://localhost:3000/categories")
+        fetch("https://6a154d6c91ff9a63de07def2.mockapi.io/categories")
             .then(response => response.json())
             .then(categories => {
                 // ==========================================
@@ -269,7 +269,7 @@ $(document).ready(function () {
         const urlParams = new URLSearchParams(window.location.search);
         const currentProductId = urlParams.get('id');
 
-        fetch("http://localhost:3000/products")
+        fetch("https://6a154d6c91ff9a63de07def2.mockapi.io/products")
             .then(response => response.json())
             .then(products => {
                 // 1. Lọc bỏ chính cái sản phẩm đang xem ra khỏi danh sách

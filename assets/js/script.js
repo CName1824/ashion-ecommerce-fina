@@ -1,6 +1,7 @@
-const DiscountDate = new Date("May 28, 2026 00:00:00").getTime();
+//#countdown
+const DiscountDate = new Date("Jun 28, 2026 00:00:00").getTime();
 
-const x = setInterval(function() {
+const countdownday = setInterval(function () {
 
   const now = new Date().getTime();
 
@@ -17,10 +18,11 @@ const x = setInterval(function() {
   document.getElementById("secs").innerHTML = secs;
 
   if (distance < 0) {
-    clearInterval(x);
+    clearInterval(countdownday);
     document.getElementById("countdown").innerHTML = "ĐÃ ĐẾN GIỜ!";
   }
 }, 1000);
+//#countdownend
 //#shop
 let rangeMin = document.getElementById("range-min");
 let rangeMax = document.getElementById("range-max");
@@ -38,13 +40,10 @@ function updateSlider() {
   if (parseInt(rangeMax.value) < parseInt(rangeMin.value)) {
     rangeMax.value = rangeMin.value;
   }
-
   inputMin.value = "$" + rangeMin.value;
   inputMax.value = "$" + rangeMax.value;
-
   let percentMin = ((rangeMin.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
   let percentMax = ((rangeMax.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
-
   progress.style.left = percentMin + "%";
   progress.style.right = (100 - percentMax) + "%";
 }
