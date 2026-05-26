@@ -1,0 +1,200 @@
+/*---------------------
+  Shop Cart begin
+-----------------------*/
+.shop-cart {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.shop-cart-table {
+    margin-bottom: 30px;
+}
+
+.shop-cart-table thead th {
+    font-size: 18px;
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.shop-cart-table tbody tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.shop-cart-table tbody tr:first-child {
+    border-top: 1px solid #f2f2f2;
+}
+
+.shop-cart-table tbody td {
+    padding: 30px 0;
+    vertical-align: middle;
+}
+
+.shop-cart-table tbody tr .cart-product-item {
+    overflow: hidden;
+    width: 585px;
+}
+
+.shop-cart-table tbody tr .cart-product-item img {
+    margin-right: 25px;
+}
+
+.shop-cart-table tbody tr .cart-product-item .cart-product-title {
+    overflow: hidden;
+}
+
+.shop-cart-table tbody tr .cart-product-item h6 {
+    font-weight: 600;
+    color: #111111;
+}
+
+.shop-cart-table tbody tr .cart-product-item .rating i {
+    font-size: 1rem;
+    color: #e3c01c;
+    margin-right: -4px;
+}
+
+.shop-cart-table tbody tr .cart-price {
+    font-size: 1.6rem;
+    color: #ca1515;
+    font-weight: 600;
+    width: 190px;
+}
+
+.shop-cart-table tbody tr .cart-quantity {
+    width: 190px;
+}
+
+.shop-cart-table tbody tr .cart-quantity .pro-qty {
+    border: none;
+    padding: 0;
+    width: 110px;
+    border-radius: 0;
+}
+.shop-cart-table tbody tr .cart-quantity .pro-qty input{
+    width: 60px;
+}
+
+.shop-cart-table tbody tr .cart-total {
+    font-size: 1.6rem;
+    color: #ca1515;
+    font-weight: 600;
+    width: 150px;
+}
+
+
+.shop-cart-table tbody tr .cart-close span {
+    height: 45px;
+    width: 45px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: #111111;
+    line-height: 2.5;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart-btn {
+    margin-bottom: 50px;
+}
+
+.cart-btn a {
+    font-size: 1.4rem;
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 30px 14px;
+    background: #f5f5f5;
+}
+
+.cart-btn a span {
+    color: #ca1515;
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+
+.cart-btn.update-btn {
+    text-align: right;
+}
+
+.shop-cart .discount-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-cart .discount-content h6 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.shop-cart .discount-content form {
+    position: relative;
+    width: 370px;
+}
+
+.shop-cart .discount-content form input {
+    width: 100%;
+    height: 52px;
+    border: 1px solid #444444;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    color: #444444;
+    padding-left: 30px;
+}
+
+.shop-cart .discount-content form button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.cart-total-procced {
+    background: #f5f5f5;
+    padding: 40px;
+}
+
+.cart-total-procced h6 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cart-total-procced ul {
+    margin-bottom: 25px;
+}
+
+.cart-total-procced ul li {
+    list-style: none;
+    font-size: 1.6rem;
+    color: #111111;
+    font-weight: 600;
+    overflow: hidden;
+    line-height: 2.5;
+}
+
+.cart-total-procced ul li span {
+    color: #ca1515;
+    float: right;
+}
+
+.cart-total-procced .primary-btn {
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    padding: 12px 0 10px;
+}
+
+.cart-total-procced .primary-btn:hover {
+    color: #0056b3;
+}
+
+/*---------------------
+  Shop Cart end
+-----------------------*/
