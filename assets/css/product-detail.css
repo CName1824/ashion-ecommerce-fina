@@ -1,0 +1,404 @@
+/*---------------------
+  Product Details begin
+-----------------------*/
+
+.breadcrumb-option {
+    padding-top: 35px;
+}
+
+.breadcrumb a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #111111;
+
+}
+
+.breadcrumb li i {
+    margin-right: 5px;
+}
+
+.product-detail {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.product-detail-pic {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+.product-detail-pic-left {
+    width: 22%;
+    max-height: 574px;
+}
+
+.product-thumb .pt {
+    display: block;
+    line-height: 0;
+    margin-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-thumb .pt img {
+    width: 100%;
+}
+
+.product-thumb .pt::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.product-thumb .pt.active::after {
+    opacity: 0.3;
+}
+
+.product-details-slider-content {
+    flex: 1;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.product-detail-pic-slider .owl-nav button.owl-prev,
+.product-detail-pic-slider .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    font-size: 2.2rem;
+    color: #111111;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    line-height: 2;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.product-detail-pic-slider .owl-nav button.owl-prev {
+    left: 10px;
+}
+
+.product-detail-pic-slider .owl-nav button.owl-next {
+    right: 10px;
+}
+
+
+
+.product-detail-text h3 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.product-detail-text h3 span {
+    display: block;
+    font-size: 1.4rem;
+    color: #444444;
+    text-transform: none;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.product-detail-text .rating {
+    margin-bottom: 16px;
+}
+
+.product-detail-text .rating i {
+    font-size: 1.2rem;
+    color: #e3c01c;
+    margin-right: -4px;
+}
+
+.product-detail-text .rating span {
+    font-size: 1.2rem;
+    color: #666666;
+    margin-left: 5px;
+}
+
+.product-detail-price {
+    font-size: 30px;
+    font-weight: 600;
+    color: #ca1515;
+    margin-bottom: 30px;
+}
+
+.product-detail-price span {
+    font-size: 18px;
+    color: #b1b0b0;
+    text-decoration: line-through;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.product-detail-text p {
+    color: #444444;
+    margin-bottom: 28px;
+}
+
+.product-detail-button {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.quantity>span {
+    font-size: 1.4rem;
+    color: #111111;
+    font-weight: 600;
+    float: left;
+    margin-top: 14px;
+    margin-right: 15px;
+}
+
+
+
+.product-detail-button .cart-btn {
+    font-size: 1.4rem;
+    color: #ffffff;
+    background: #ca1515;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 14px 30px 15px;
+    border-radius: 50px;
+    margin: 0 10px 10px;
+}
+
+.product-detail-button ul {
+    display: flex;
+}
+
+.product-detail-button ul li a {
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.product-detail-button ul li a span {
+    font-size: 1.8rem;
+    color: #666666;
+}
+
+.product-detail-widget {
+    border-top: 1px solid #ebebeb;
+    padding-top: 35px;
+}
+
+.product-detail-widget ul li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.product-detail-widget ul li span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #111111;
+    width: 150px;
+}
+
+.product-detail-widget .stock-checkbox {
+    overflow: hidden;
+}
+
+.product-detail-widget .stock-checkbox label {
+    display: block;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #666666;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-detail-widget .stock-checkbox label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.product-detail-widget .stock-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #444444;
+    border-radius: 2px;
+}
+
+.stock-checkbox .checkmark::after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    ;
+    font-size: 1rem;
+    font-weight: 400;
+    position: absolute;
+    display: none;
+    color: #ca1515;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stock-checkbox input:checked~.checkmark {
+    border-color: #ca1515;
+}
+
+.stock-checkbox input:checked~.checkmark::after {
+    display: block;
+}
+
+.product-detail-widget .color-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.product-detail-widget .color-checkbox label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+}
+
+.product-detail-widget .color-checkbox label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.product-detail-widget .color-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background: #e31e2f;
+    border-radius: 50%;
+}
+
+.product-detail-widget .color-checkbox .checkmark.black-bg {
+    background: #111111;
+}
+
+.product-detail-widget .color-checkbox .checkmark.grey-bg {
+    background: #e4aa8b;
+}
+
+.product-detail-widget .color-checkbox .checkmark::after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    ;
+    font-weight: 400;
+    position: absolute;
+    display: none;
+    color: white;
+    font-size: 12px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.product-detail-widget .size-btn label {
+    font-size: 1.4rem;
+    color: #666666;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.product-detail-widget .size-btn label.active {
+    color: #ca1515;
+}
+
+.product-detail-widget .size-btn label input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.product-detail-widget ul li p {
+    color: #666666;
+}
+
+
+.product-detail-tab {
+    padding-top: 80px;
+    margin-bottom: 65px;
+}
+
+.product-detail-tab .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+
+.product-detail-tab .nav::before {
+    height: 1px;
+    flex-grow: 1;
+    background: #e1e1e1;
+    content: "";
+}
+
+.product-detail-tab .nav::after {
+    height: 1px;
+    flex-grow: 1;
+    background: #e1e1e1;
+    content: "";
+}
+
+.product-detail-tab .nav-item {
+    margin-right: 46px;
+}
+
+.product-detail-tab .nav-item:last-child {
+    margin-right: 0;
+}
+
+.product-detail-tab .nav-item .nav-link {
+    font-size: 1.8rem;
+    color: #666666;
+    font-weight: 600;
+    background: none;
+}
+
+.product-detail-tab .nav-item .nav-link.active {
+    color: #111111;
+}
+
+.product-detail-tab .tab-content .tab-pane h6 {
+    color: #666666;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.related-title h5 {
+    font-size: 2rem;
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+
+/*---------------------
+  Product Details end
+-----------------------*/
