@@ -1,7 +1,7 @@
 //#countdown
 const DiscountDate = new Date("Jun 28, 2026 00:00:00").getTime();
 
-const countdownday = setInterval(function() {
+const countdownday = setInterval(function () {
 
   const now = new Date().getTime();
 
@@ -47,9 +47,9 @@ function updateSlider() {
   }
   if (parseInt(rangeMax.value) < parseInt(rangeMin.value)) {
     rangeMax.value = rangeMin.value;
-  }  
+  }
   inputMin.value = "$" + rangeMin.value;
-  inputMax.value = "$" + rangeMax.value;   
+  inputMax.value = "$" + rangeMax.value;
   let percentMin = ((rangeMin.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
   let percentMax = ((rangeMax.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
   progress.style.left = percentMin + "%";

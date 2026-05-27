@@ -1,0 +1,211 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Women’s fashion",
+            "slug": "womens",
+            "image": "uploads/categories/category-1.jpg",
+            "itemCount": 120,
+            "description": "Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna aliquapendisse ultrices gravida."
+        },
+        {
+            "id": 2,
+            "name": "Men’s",
+            "slug": "mens",
+            "image": "uploads/categories/category-2.jpg",
+            "itemCount": 358
+        },
+        {
+            "id": 3,
+            "name": "Kid’s",
+            "slug": "kids",
+            "image": "uploads/categories/category-3.jpg",
+            "itemCount": 120
+        },
+        {
+            "id": 4,
+            "name": "Cosmetics",
+            "slug": "cosmetics",
+            "image": "uploads/categories/category-4.jpg",
+            "itemCount": 358
+        },
+        {
+            "id": 5,
+            "name": "Accessories",
+            "slug": "accessories",
+            "image": "uploads/categories/category-5.jpg",
+            "itemCount": 358
+        }
+    ],
+
+    "products": [
+        {
+            "id": 1,
+            "categoryId": 1,
+            "name": "Buttons tweed blazer",
+            "price": 75.0,
+            "oldPrice": null,
+            "stock": 13,
+            "rating": 0,
+            "createdAt": "2026-05-25T08:00:00Z",
+            "images": [
+                "./uploads/product/product-1.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "categoryId": 2,
+            "name": "Flowy striped skirt",
+            "price": 75.0,
+            "oldPrice": null,
+            "stock": 1,
+            "rating": 5,
+            "createdAt": "2026-04-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-2.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "categoryId": 1,
+            "name": "Cotton T-Shirt",
+            "price": 75.0,
+            "oldPrice": null,
+            "stock": 0,
+            "rating": 4,
+            "createdAt": "2026-05-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-3.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "categoryId": 2,
+            "name": "Slim striped pocket shirt",
+            "price": 45.0,
+            "oldPrice": null,
+            "stock": 12,
+            "rating": 4,
+            "createdAt": "2026-02-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-4.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "categoryId": 5,
+            "name": "Fit micro corduroy shirt",
+            "price": 45.0,
+            "oldPrice": null,
+            "stock": 20,
+            "rating": 4,
+            "createdAt": "2026-01-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-5.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "categoryId": 1,
+            "name": "Tropical Kimono",
+            "price": 75.0,
+            "oldPrice": 83.0,
+            "stock": 14,
+            "rating": 5,
+            "createdAt": "2026-02-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-6.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "categoryId": 1,
+            "name": "Contrasting sunglasses",
+            "price": 80.0,
+            "oldPrice": null,
+            "stock": 20,
+            "rating": 3,
+            "createdAt": "2026-03-20T08:00:00Z",
+            "images": [
+                "./uploads/product/product-7.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "categoryId": 5,
+            "name": "Water resistant backpack",
+            "price": 75.0,
+            "oldPrice": 83.0,
+            "stock": 12,
+            "rating": 5,
+            "createdAt": "2026-04-21T08:00:00Z",
+            "images": [
+                "./uploads/product/product-8.jpg"
+            ],
+            "variants": {
+                "colors": [
+                    "red", "black", "grey"
+                ],
+                "sizes": [
+                    "xs", "s", "m", "l"
+                ]
+            }
+        }
+    ]
+}
