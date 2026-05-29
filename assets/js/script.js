@@ -1,7 +1,7 @@
 //#countdown
-const DiscountDate = new Date("May 28, 2026 00:00:00").getTime();
+const DiscountDate = new Date("Jun 28, 2026 00:00:00").getTime();
 
-const countdownday = setInterval(function() {
+const countdownday = setInterval(function () {
 
   const now = new Date().getTime();
 
@@ -12,14 +12,22 @@ const countdownday = setInterval(function() {
   const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const secs = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("mins").innerHTML = mins;
-  document.getElementById("secs").innerHTML = secs;
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minsEl = document.getElementById("mins");
+  const secsEl = document.getElementById("secs");
+
+  if (daysEl) daysEl.innerHTML = days;
+  if (hoursEl) hoursEl.innerHTML = hours;
+  if (minsEl) minsEl.innerHTML = mins;
+  if (secsEl) secsEl.innerHTML = secs;
 
   if (distance < 0) {
     clearInterval(countdownday);
-    document.getElementById("countdown").innerHTML = "ĐÃ ĐẾN GIỜ!";
+    const countdownEl = document.getElementById("countdown");
+    if (countdownEl) {
+      countdownEl.innerHTML = "ĐÃ ĐẾN GIỜ!";
+    }
   }
 }, 1000);
 //#countdownend
@@ -39,17 +47,18 @@ function updateSlider() {
   }
   if (parseInt(rangeMax.value) < parseInt(rangeMin.value)) {
     rangeMax.value = rangeMin.value;
-  }  
+  }
   inputMin.value = "$" + rangeMin.value;
-  inputMax.value = "$" + rangeMax.value;   
+  inputMax.value = "$" + rangeMax.value;
   let percentMin = ((rangeMin.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
   let percentMax = ((rangeMax.value - MIN_LIMIT) / (MAX_LIMIT - MIN_LIMIT)) * 100;
   progress.style.left = percentMin + "%";
   progress.style.right = (100 - percentMax) + "%";
 }
 
-rangeMin.addEventListener("input", updateSlider);
-rangeMax.addEventListener("input", updateSlider);
-
-updateSlider();
+if (rangeMin && rangeMax && inputMin && inputMax && progress) {
+  rangeMin.addEventListener("input", updateSlider);
+  rangeMax.addEventListener("input", updateSlider);
+  updateSlider();
+}
 //#shopend
