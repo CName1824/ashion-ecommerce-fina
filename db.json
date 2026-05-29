@@ -13,28 +13,32 @@
             "name": "Men’s",
             "slug": "mens",
             "image": "uploads/categories/category-2.jpg",
-            "itemCount": 358
+            "itemCount": 358,
+            "description":""
         },
         {
             "id": 3,
             "name": "Kid’s",
             "slug": "kids",
             "image": "uploads/categories/category-3.jpg",
-            "itemCount": 120
+            "itemCount": 120,
+            "description": ""
         },
         {
             "id": 4,
             "name": "Cosmetics",
             "slug": "cosmetics",
             "image": "uploads/categories/category-4.jpg",
-            "itemCount": 358
+            "itemCount": 358,
+            "description": ""
         },
         {
             "id": 5,
             "name": "Accessories",
             "slug": "accessories",
             "image": "uploads/categories/category-5.jpg",
-            "itemCount": 358
+            "itemCount": 358,
+            "description": ""
         }
     ],
 
@@ -45,19 +49,21 @@
             "name": "Buttons tweed blazer",
             "price": 75.0,
             "oldPrice": null,
-            "stock": 13,
+            "quantity": 13,
             "rating": 0,
             "createdAt": "2026-05-25T08:00:00Z",
             "images": [
                 "./uploads/product/product-1.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+               "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 2
+                },
+                "black": {
+                    "m": 3
+                }
             }
         },
         {
@@ -66,19 +72,17 @@
             "name": "Flowy striped skirt",
             "price": 75.0,
             "oldPrice": null,
-            "stock": 1,
+            "quantity": 1,
             "rating": 5,
             "createdAt": "2026-04-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-2.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 1
+                    
+                }
             }
         },
         {
@@ -87,19 +91,14 @@
             "name": "Cotton T-Shirt",
             "price": 75.0,
             "oldPrice": null,
-            "stock": 0,
+            "quantity": 0,
             "rating": 4,
             "createdAt": "2026-05-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-3.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                
             }
         },
         {
@@ -108,19 +107,24 @@
             "name": "Slim striped pocket shirt",
             "price": 45.0,
             "oldPrice": null,
-            "stock": 12,
+            "quantity": 12,
             "rating": 4,
             "createdAt": "2026-02-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-4.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 1
+                },
+                "black": {
+                    "m": 2
+                },
+                "grey": {
+                    "xs": 1
+                }
             }
         },
         {
@@ -129,19 +133,27 @@
             "name": "Fit micro corduroy shirt",
             "price": 45.0,
             "oldPrice": null,
-            "stock": 20,
+            "quantity": 20,
             "rating": 4,
             "createdAt": "2026-01-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-5.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 1
+                },
+                "black": {
+                    "m": 2
+                },
+                "grey": {
+                    "xs": 1,
+                    "s": 2,
+                    "m": 3,
+                    "l": 3
+                }
             }
         },
         {
@@ -150,19 +162,25 @@
             "name": "Tropical Kimono",
             "price": 75.0,
             "oldPrice": 83.0,
-            "stock": 14,
+            "quantity": 14,
             "rating": 5,
             "createdAt": "2026-02-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-6.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 1
+                },
+                "black": {
+                    "m": 2
+                },
+                "grey": {
+                    "xs": 1,
+                    "s": 2
+                }
             }
         },
         {
@@ -171,19 +189,25 @@
             "name": "Contrasting sunglasses",
             "price": 80.0,
             "oldPrice": null,
-            "stock": 20,
+            "quantity": 20,
             "rating": 3,
             "createdAt": "2026-03-20T08:00:00Z",
             "images": [
                 "./uploads/product/product-7.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 5
+                },
+                "black": {
+                    "m": 2
+                },
+                "grey": {
+                    "xs": 1,
+                    "s":4
+                }
             }
         },
         {
@@ -192,19 +216,24 @@
             "name": "Water resistant backpack",
             "price": 75.0,
             "oldPrice": 83.0,
-            "stock": 12,
+            "quantity": 12,
             "rating": 5,
             "createdAt": "2026-04-21T08:00:00Z",
             "images": [
                 "./uploads/product/product-8.jpg"
             ],
             "variants": {
-                "colors": [
-                    "red", "black", "grey"
-                ],
-                "sizes": [
-                    "xs", "s", "m", "l"
-                ]
+                "red": {
+                    "xs": 3,
+                    "s": 5,
+                    "m": 1
+                },
+                "black": {
+                    "m": 2
+                },
+                "grey": {
+                    "xs": 1
+                }
             }
         }
     ]
