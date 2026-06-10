@@ -157,12 +157,17 @@ img {
 .header__menu ul {
     margin: 0;
     padding: 0;
+    white-space: nowrap;
 }
 
 .header__menu ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 45px;
     position: relative;
+}
+
+.header__menu ul li:last-child {
+    margin-right: 0;
 }
 
 /* ===== LINK ===== */
@@ -1617,4 +1622,23 @@ h4 {
         display: none;
     }
     
+}
+
+/* ===== OFFCANVAS CUSTOM STYLES ===== */
+.offcanvas-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #111111 !important;
+    padding: 7px 0px;
+}
+.offcanvas__menu li {
+    margin-bottom: 5px;
+}
+/* ===== OFFCANVAS MENU ICON ===== */
+.offcanvas__menu [data-bs-toggle="collapse"] span.fa {
+    transition: transform 0.3s ease;
+}
+.offcanvas__menu [data-bs-toggle="collapse"].collapsed span.fa {
+    transform: rotate(-90deg);
 }
