@@ -819,8 +819,6 @@ img {
     background-color: #f4f4f4;
     justify-content: center;
     padding: 75px 90px 50px;
-    max-width: 585px;
-    height: 390px;
     position: relative;
     z-index: 1;
 }
@@ -882,7 +880,6 @@ img {
     flex-wrap: nowrap !important;
     justify-content: center;
     gap: 20px;
-    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -1021,113 +1018,148 @@ img {
 
 /*insta end*/
 
-/* footer */
+/*---------------------
+  Footer
+-----------------------*/
+
 .footer {
-    background: #f7f7f7;
-    padding: 60px 0 20px;
-    font-family: Arial, sans-serif;
+    padding-top: 55px;
 }
 
-.logo {
-    font-family: 'Cookie', cursive;
-    font-size: 32px;
-    margin-bottom: 15px;
+.footer__about {
+    margin-bottom: 30px;
 }
 
-.footer .col p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-}
-
-.footer .col h4 {
-    font-size: 16px;
+.footer__about p {
     margin-bottom: 20px;
 }
 
-.footer .col ul {
-    list-style: none;
-    padding: 0;
+.footer__logo {
+    margin-bottom: 20px;
 }
 
-.footer .col ul li {
+.footer__payment a {
+    margin-right: 6px;
     margin-bottom: 10px;
-}
-
-.footer .col ul li a {
-    text-decoration: none;
-    color: #666;
-    font-size: 14px;
-}
-
-.footer .col ul li a:hover {
-    color: #000;
-}
-
-/* payment */
-.payment a {
     display: inline-block;
-    margin-right: 5px;
-    margin-top: 10px;
-
 }
-.payment img {
+
+.footer__payment a:last-child {
+    margin-right: 0;
+}
+
+.footer__widget {
+    margin-bottom: 30px;
+}
+
+.footer__widget h6 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.footer__widget ul li {
+    list-style: none;
+}
+
+.footer__widget ul li a {
+    font-size: 14px;
+    color: #666666;
+    line-height: 30px;
+}
+
+.footer__newslatter {
+    margin-bottom: 30px;
+}
+
+.footer__newslatter h6 {
+    color: #111111;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.footer__newslatter form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.footer__newslatter form input {
+    height: 52px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.footer__newslatter form input::-webkit-input-placeholder {
+    color: #666666;
+}
+
+.footer__newslatter form input::-moz-placeholder {
+    color: #666666;
+}
+
+.footer__newslatter form input:-ms-input-placeholder {
+    color: #666666;
+}
+
+.footer__newslatter form input::-ms-input-placeholder {
+    color: #666666;
+}
+
+.footer__newslatter form input::placeholder {
+    color: #666666;
+}
+
+.footer__newslatter form button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.footer__social a {
+    display: inline-block;
+    height: 40px;
     width: 40px;
-    
-}
-
-/* newsletter */
-.newsletter {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.newsletter input {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px 0 0 20px;
-    outline: none;
-}
-
-.newsletter button {
-    padding: 10px 20px;
-    border: none;
-    background: red;
-    color: #fff;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-}
-
-/* social */
-.social a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #ddd;
+    background: #e1e1e1;
+    font-size: 15px;
+    color: #111111;
+    line-height: 40px;
     text-align: center;
-    line-height: 35px;
     border-radius: 50%;
-    margin-right: 5px;
-    color: #333;
-    font-size: 14px;
+    margin-right: 6px;
+    margin-bottom: 5px;
 }
 
-.social a:hover {
-    background: #000;
-    color: #fff;
+.footer__social a:last-child {
+    margin-right: 0;
 }
 
-/* bottom */
-hr {
-    margin: 40px 0 20px;
-    border: 0.5px solid #ddd;
-}
-
-.copyright {
+.footer__copyright__text {
+    border-top: 1px solid #e1e1e1;
+    padding: 18px 0 25px;
     text-align: center;
-    font-size: 14px;
-    color: #666;
+    margin-top: 35px;
+}
+
+.footer__copyright__text p {
+    margin-bottom: 0;
+}
+
+.footer__copyright__text a {
+    color: #5C5C5C;
+}
+
+.footer__copyright__text i {
+    color: #ca1515;
+}
+
+.footer__copyright__text a:hover {
+    color: #ca1515;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -1205,6 +1237,45 @@ hr {
     .product-detail-tab .nav::after,
     .product-detail-tab .nav::before{
         display: none;
+    }
+    .discount-summer {
+        padding: 50px 20px 40px !important; 
+    }
+
+    .summer_2019 {
+        font-size: 4rem; 
+        line-height: 40px;
+    }
+
+    .sale ::before {
+        top: 30%; 
+        width: 160px;
+        height: 160px;
+    }
+
+    .countdown {
+        gap: 5px; 
+    }
+
+    .countdown span div {
+        font-size: 2.4rem; 
+    }
+    .row>*{
+        padding-right: 0px;
+    }
+    .footer__newslatter form {
+		text-align: center;
+	}
+	.footer__newslatter form input {
+		margin-bottom: 10px;
+	}
+	.footer__newslatter form button {
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+    .footer__social{
+        text-align: center;
     }
     
 }
