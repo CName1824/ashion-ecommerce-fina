@@ -12,14 +12,22 @@ const countdownday = setInterval(function () {
   const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const secs = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("mins").innerHTML = mins;
-  document.getElementById("secs").innerHTML = secs;
+  const daysEl = document.getElementById("days");
+  const hoursEl = document.getElementById("hours");
+  const minsEl = document.getElementById("mins");
+  const secsEl = document.getElementById("secs");
+
+  if (daysEl) daysEl.innerHTML = days;
+  if (hoursEl) hoursEl.innerHTML = hours;
+  if (minsEl) minsEl.innerHTML = mins;
+  if (secsEl) secsEl.innerHTML = secs;
 
   if (distance < 0) {
     clearInterval(countdownday);
-    document.getElementById("countdown").innerHTML = "ĐÃ ĐẾN GIỜ!";
+    const countdownEl = document.getElementById("countdown");
+    if (countdownEl) {
+      countdownEl.innerHTML = "ĐÃ ĐẾN GIỜ!";
+    }
   }
 }, 1000);
 //#countdownend
@@ -48,8 +56,9 @@ function updateSlider() {
   progress.style.right = (100 - percentMax) + "%";
 }
 
-rangeMin.addEventListener("input", updateSlider);
-rangeMax.addEventListener("input", updateSlider);
-
-updateSlider();
+if (rangeMin && rangeMax && inputMin && inputMax && progress) {
+  rangeMin.addEventListener("input", updateSlider);
+  rangeMax.addEventListener("input", updateSlider);
+  updateSlider();
+}
 //#shopend

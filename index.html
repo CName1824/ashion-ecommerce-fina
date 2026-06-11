@@ -18,36 +18,98 @@
 </head>
 
 <body>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
+        style="width: 300px;">
+        <div class="offcanvas-header justify-content-end p-4 pb-0">
+            <button type="button" class="btn-close text-reset fs-4" data-bs-dismiss="offcanvas" aria-label="Close"
+                style="background: none; border: none; font-size: 24px; padding: 0; margin: 0; width: 40px; height: 40px; border-radius: 50%; background-color: #f5f5f5; display: flex; align-items: center; justify-content: center; opacity: 1;"><i
+                    class="fa fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body px-4">
+            <ul class="header__right__widget list-unstyled d-flex gap-4 justify-content-center mb-4 p-0">
+                <li><span class="icon_search search-switch fs-5" style="cursor: pointer;"></span></li>
+                <li>
+                    <a href="#" class="position-relative text-dark fs-5 text-decoration-none">
+                        <span class="icon_heart_alt"></span>
+                        <div class="tip position-absolute rounded-circle bg-dark text-white d-flex align-items-center justify-content-center"
+                            style="top: -8px; right: -8px; width: 16px; height: 16px; font-size: 10px;">2</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="position-relative text-dark fs-5 text-decoration-none">
+                        <span class="icon_bag_alt"></span>
+                        <div class="tip position-absolute rounded-circle bg-dark text-white d-flex align-items-center justify-content-center"
+                            style="top: -8px; right: -8px; width: 16px; height: 16px; font-size: 10px;">2</div>
+                    </a>
+                </li>
+            </ul>
+    
+            <div class="offcanvas__logo mb-4 text-start">
+                <a href="./index.html"><img src="assets/img/logo.png" alt=""></a>
+            </div>
+            <nav class="offcanvas__menu mb-5 text-start">
+                <ul class="list-unstyled p-0 m-0">
+                    <li class="mb-3"><a href="./index.html" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Home</a></li>
+                    <li class="mb-3"><a href="#" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Women’s</a></li>
+                    <li class="mb-3"><a href="#" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Men’s</a></li>
+                    <li class="mb-3"><a href="./shop.html" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Shop</a></li>
+                    <li class="mb-3">
+                        <a href="#" class="text-dark text-decoration-none fw-bold d-flex align-items-center collapsed"
+                            aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#pagesCollapse"
+                            style="font-size: 14px; padding: 7px 0;">
+                            Pages <span class="fa fa-caret-down ms-2 fs-6"></span>
+                        </a>
+                        <ul class="collapse list-unstyled ps-3 mt-1" id="pagesCollapse">
+                            <li><a href="./product-details.html" class="text-secondary text-decoration-none fw-bold d-block"
+                                    style="font-size: 14px; padding: 7px 0;">Product Details</a></li>
+                            <li><a href="./shop-cart.html" class="text-secondary text-decoration-none fw-bold d-block"
+                                    style="font-size: 14px; padding: 7px 0;">Shop Cart</a></li>
+                            <li><a href="./checkout.html" class="text-secondary text-decoration-none fw-bold d-block"
+                                    style="font-size: 14px; padding: 7px 0;">Checkout</a></li>
+                            <li><a href="./blog-details.html" class="text-secondary text-decoration-none fw-bold d-block"
+                                    style="font-size: 14px; padding: 7px 0;">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="mb-3"><a href="./blog.html" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Blog</a></li>
+                    <li class="mb-3"><a href="./contact.html" class="text-dark text-decoration-none fw-bold d-block"
+                            style="font-size: 14px; padding: 7px 0;">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="offcanvas__auth mb-4 text-start">
+                <a href="#" class="text-dark text-decoration-none" style="font-size: 14px; padding: 7px 0;">Login</a> <span
+                    class="">/</span>
+                <a href="#" class="text-dark text-decoration-none" style="font-size: 14px; padding: 7px 0;">Register</a>
+            </div>
+        </div>
+    </div>
+    
     <!-- ===========header============ -->
     <header class="header">
         <div class="container-fluid">
-            <div class="row">
-        
+            <div class="row align-items-center">
+    
                 <!-- LOGO -->
-                <div class="col-xl-3 col-lg-2">
+                <div class="col-6 col-lg-3 col-xl-3">
                     <div class="header__logo">
                         <a href="./index.html">
                             <img src="assets/img/logo.png" alt="">
                         </a>
                     </div>
                 </div>
-        
+    
                 <!-- MENU -->
-                <div class="col-xl-6 col-lg-7">
+                <div class="col-lg-6 col-xl-6 d-none d-lg-block text-center">
                     <nav class="header__menu">
-                        <ul>
-                            <li class="active">
-                                <a href="./index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">Women’s</a>
-                            </li>
-                            <li>
-                                <a href="#">Men’s</a>
-                            </li>
-                            <li>
-                                <a href="./shop.html">Shop</a>
-                            </li>
+                        <ul class="d-inline-block p-0 m-0 text-center w-100" style="text-align: center;">
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="#">Women’s</a></li>
+                            <li><a href="#">Men’s</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
                             <li>
                                 <a href="#">Pages</a>
                                 <ul class="dropdown">
@@ -57,29 +119,21 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li>
-                                <a href="./blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="./contact.html">Contact</a>
-                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
-        
+    
                 <!-- RIGHT -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-xl-3 d-none d-lg-block text-end">
                     <div class="header__right">
-        
                         <div class="header__right__auth">
                             <a href="#">Login</a>
                             <a href="#">Register</a>
                         </div>
-        
                         <ul class="header__right__widget">
-                            <li>
-                                <span class="icon_search search-switch"></span>
-                            </li>
+                            <li><span class="icon_search search-switch"></span></li>
                             <li>
                                 <a href="#">
                                     <span class="icon_heart_alt"></span>
@@ -93,10 +147,17 @@
                                 </a>
                             </li>
                         </ul>
-        
                     </div>
                 </div>
-        
+    
+                <!-- HAMBURGER BUTTON -->
+                <div class="col-6 d-lg-none d-flex justify-content-end">
+                    <div class="canvas__open border rounded p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
+                        style="cursor: pointer; width: 45px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                        <i class="fa fa-bars fs-5"></i>
+                    </div>
+                </div>
+    
             </div>
         </div>
     </header>
@@ -144,7 +205,7 @@
     <!-- ===========banner-slider============ -->
     <section class="banner">
         <div class="banner_slider owl-carousel">
-            <div class="banner_item set-bg" data-setbg="uploads/banner/banner-1.jpg">
+            <div class="banner_item set-bg" data-setbg="ashion-ecommerce-fina/uploads/banner/banner-1.jpg">
                 <div class="banner_text">
                     <span class="animate__animated">The Chloe Collection</span>
                     <h1 class="animate__animated">The Project Jacket</h1>
@@ -152,7 +213,7 @@
                 </div>
             </div>
 
-            <div class="banner_item set-bg" data-setbg="uploads/banner/banner-1.jpg">
+            <div class="banner_item set-bg" data-setbg="ashion-ecommerce-fina/uploads/banner/banner-1.jpg">
                 <div class="banner_text">
                     <span class="animate__animated">The Chloe Collection</span>
                     <h1 class="animate__animated">The Project Jacket</h1>
@@ -160,7 +221,7 @@
                 </div>
             </div>
 
-            <div class="banner_item set-bg" data-setbg="uploads/banner/banner-1.jpg">
+            <div class="banner_item set-bg" data-setbg="ashion-ecommerce-fina/uploads/banner/banner-1.jpg">
                 <div class="banner_text">
                     <span class="animate__animated">The Chloe Collection</span>
                     <h1 class="animate__animated">The Project Jacket</h1>
